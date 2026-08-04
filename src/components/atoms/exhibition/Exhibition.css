@@ -1,0 +1,26 @@
+.Exhibition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 700px;
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  text-decoration: none;
+}
+
+.ExhibitionYear {
+  font-size: var(--size-H3-desktop);
+  width: 150px;
+}
+
+.ExhibitionName {
+  font-size: var(--size-text-desktop);
+  width: 240px;
+}
+
+.ExhibitionPlace {
+  font-size: var(--size-text-desktop);
+  font-weight: 400;
+  width: 240px;
+}
