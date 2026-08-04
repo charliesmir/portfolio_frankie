@@ -1,4 +1,4 @@
-@import url("../styles/designTokens.css");
+@import url("../../styles/designTokens.css");
 
 .Button {
   background-color: var(--color-accent);
