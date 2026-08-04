@@ -1,0 +1,30 @@
+.Experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start; /* May change to center */
+  width: 700px;
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  text-decoration: none;
+}
+
+.ExperienceYear {
+  font-size: var(--size-text-desktop);
+  width: 150px;
+}
+
+.ExperienceName {
+  font-size: var(--size-text-desktop);
+
+  width: 240px;
+}
+
+.ExperiencePlace {
+  font-size: var(--size-H3-desktop);
+  font-family: var(--family-accent);
+  color: var(--color-accent);
+  font-weight: 400;
+  width: 240px;
+  margin-top: -5px; /* Adjusts vertical alignment */
+}
