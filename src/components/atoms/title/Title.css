@@ -1,0 +1,27 @@
+@import url("../../styles/designTokens.css");
+
+.Title {
+  font-family: var(--family-accent);
+  font-size: var(--size-H2-desktop);
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: lowercase;
+  width: 1000px; /*remove when placed in a parent component*/
+}
+
+.Title.left {
+  justify-content: flex-start;
+}
+
+.Title.onPrimary {
+  color: var(--color-secondary);
+}
+
+.TitleLine {
+  width: 545px;
+  height: 70px;
+  background-color: var(--color-accent);
+}
