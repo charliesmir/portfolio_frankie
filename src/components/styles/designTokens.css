@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Mansalva&display=swap");
+
+:root {
+  /*Colors*/
+  --color-accent: #9b4234;
+  --color-primary: #f8ecdc;
+  --color-secondary: #1b1b1b;
+
+  /*Font families*/
+  --family-accent: "Mansalva";
+  --family-primary: "Average";
+
+  /*Font sizes*/
+  --size-H1-desktop: 150px;
+  --size-H1-mobile: 75px;
+  --size-H2-desktop: 110px;
+  --size-H2-mobile: 55px;
+  --size-H3-desktop: 24px;
+  --size-H3-mobile: 20px;
+  --size-text-desktop: 20px;
+  --size-text-mobile: 16px;
+}
