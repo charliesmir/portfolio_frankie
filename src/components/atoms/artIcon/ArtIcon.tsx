@@ -3,7 +3,7 @@ import "./ArtIcon.css";
 export interface ArtIconProps {
   artwork: string;
   name: string;
-  icon: string;
+  icon?: string;
   isActive?: boolean;
   onClick?: () => void;
 }
@@ -11,7 +11,7 @@ export interface ArtIconProps {
 export const ArtIcon = ({
   artwork,
   name,
-  icon,
+  icon = "/look.svg",
   isActive = false,
   onClick,
 }: ArtIconProps) => {

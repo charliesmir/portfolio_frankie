@@ -27,7 +27,6 @@ export const Active: Story = {
   args: {
     artwork: "/artworkEx.png",
     name: "Artwork 1",
-    icon: "/look.svg",
     isActive: true,
     onClick: () => alert("Button clicked"),
   },

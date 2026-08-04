@@ -1,0 +1,9 @@
+.CollectionGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 360px;
+  gap: 30px;
+}
