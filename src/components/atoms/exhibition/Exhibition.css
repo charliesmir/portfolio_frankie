@@ -15,8 +15,11 @@
 }
 
 .ExhibitionName {
-  font-size: var(--size-text-desktop);
+  font-size: var(--size-H3-desktop);
+  font-family: var(--family-accent);
+  color: var(--color-accent);
   width: 240px;
+  margin-top: -5px; /* Adjusts vertical alignment */
 }
 
 .ExhibitionPlace {
