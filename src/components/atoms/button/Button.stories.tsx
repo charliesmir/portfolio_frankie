@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Medium: Story = {
   args: {
-    status: "active",
+    isActive: true,
     alignment: "center",
     hasIcon: false,
     size: "medium",

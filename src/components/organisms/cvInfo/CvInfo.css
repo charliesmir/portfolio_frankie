@@ -1,0 +1,13 @@
+.CvInfo {
+  width: 705px;
+  min-height: 450px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  font-size: var(--size-text-desktop);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

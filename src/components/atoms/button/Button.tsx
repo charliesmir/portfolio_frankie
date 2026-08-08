@@ -1,7 +1,7 @@
 import "./Button.css";
 
 export interface ButtonProps {
-  status?: "active" | "notActive";
+  isActive?: boolean;
   alignment: "center" | "right";
   hasIcon?: boolean;
   size: "small" | "medium" | "large";
@@ -11,7 +11,7 @@ export interface ButtonProps {
 }
 
 export const Button = ({
-  status = "notActive",
+  isActive = false,
   alignment,
   hasIcon = false,
   size,
@@ -21,7 +21,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`Button ${size} ${alignment} ${status}`}
+      className={`Button ${size} ${alignment} ${isActive ? "active" : " "}`}
       onClick={onClick}
     >
       <div className="ButtonContent">

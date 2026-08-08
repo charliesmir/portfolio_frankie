@@ -1,0 +1,41 @@
+.TitleSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.TitleSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.TitleSectionFullName {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--family-accent);
+  color: var(--color-accent);
+}
+
+.TitleSectionName {
+  font-size: var(--size-H1-desktop);
+}
+
+.TitleSectionSurname {
+  font-size: var(--size-H2-desktop);
+  margin-top: -70px; /* Adjustment to account for font placement*/
+}
+
+.TitleSectionAbout {
+  font-family: var(--family-primary);
+  font-size: var(--size-H3-desktop);
+  width: 330px;
+}
+
+.TitleSectionPicture {
+  margin-top: 55px;
+  margin-left: -85px; /* Ensures that text follows the outline of the picture */
+  width: 593px; /*size of the original picture*/
+  height: 637px; /*size of the original picture*/
+}

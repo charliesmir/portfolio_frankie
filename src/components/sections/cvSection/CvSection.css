@@ -1,0 +1,14 @@
+.CvSection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 1000px;
+}
+
+.CvSectionInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
