@@ -1,0 +1,11 @@
+.ContactsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 70px;
+  width: 1000px;
+}
+
+.ContactsSectionList {
+  margin-right: 100px;
+}
