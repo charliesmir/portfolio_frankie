@@ -1,0 +1,20 @@
+.ArtCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 1000px;
+}
+
+.ArtCarouselButtonPrev {
+  position: absolute;
+  left: 0;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.ArtCarouselButtonNext {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}

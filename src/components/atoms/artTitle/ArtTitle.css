@@ -1,0 +1,16 @@
+.ArtTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--family-primary);
+  font-size: var(--size-H2-desktop);
+  color: var(--color-secondary);
+  width: 570px;
+}
+
+.ArtTitleIdea {
+  font-family: var(--family-accent);
+  font-size: var(--size-H3-desktop);
+  width: 600px;
+  color: var(--color-accent);
+}
