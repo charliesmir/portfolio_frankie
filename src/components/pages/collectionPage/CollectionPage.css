@@ -1,0 +1,6 @@
+.CollectionPage {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+}
