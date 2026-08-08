@@ -13,7 +13,7 @@ export const Header = ({ button }: HeaderProps) => {
         onClick={button[0].onClick}
         alignment={button[0].alignment}
         size={button[0].size}
-        status={button[0].status}
+        isActive={button[0].isActive}
       />
       <div className="HeaderNavigation">
         <Button
@@ -21,21 +21,21 @@ export const Header = ({ button }: HeaderProps) => {
           onClick={button[1].onClick}
           alignment={button[1].alignment}
           size={button[1].size}
-          status={button[1].status}
+          isActive={button[1].isActive}
         />
         <Button
           title={button[2].title}
           onClick={button[2].onClick}
           alignment={button[2].alignment}
           size={button[2].size}
-          status={button[2].status}
+          isActive={button[2].isActive}
         />
         <Button
           title={button[3].title}
           onClick={button[3].onClick}
           alignment={button[3].alignment}
           size={button[3].size}
-          status={button[3].status}
+          isActive={button[3].isActive}
         />
       </div>
     </div>

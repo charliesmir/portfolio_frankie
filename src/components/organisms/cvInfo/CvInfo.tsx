@@ -29,9 +29,7 @@ export const CvInfo = ({
 }: CvInfoProps) => {
   return (
     <div className="CvInfo">
-      {content === "Statement" && (
-        <div className="CvInfoStatement">{statement}</div>
-      )}
+      {content === "Statement" && <div>{statement}</div>}
       {content === "Exhibitions" && <ExhibitionsList {...exhibitions} />}
       {content === "Education" && <EducationList {...education} />}
       {content === "Experience" && <ExperienceList {...experience} />}

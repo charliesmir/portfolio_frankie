@@ -22,7 +22,7 @@ export const Primary: Story = {
         hasIcon: false,
         size: "large",
         title: "Statement",
-        status: "active",
+        isActive: true,
         onClick: () => alert("Button clicked"),
       },
       {
