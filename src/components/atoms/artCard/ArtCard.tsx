@@ -4,7 +4,7 @@ export interface ArtCardProps {
   image: string;
   title: string;
   info: string;
-  description: string;
+  description?: string;
 }
 
 export const ArtCard = ({ image, title, info, description }: ArtCardProps) => {
