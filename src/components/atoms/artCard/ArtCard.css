@@ -1,0 +1,52 @@
+.ArtCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 840px;
+}
+
+.ArtCardImage {
+  min-width: 400px;
+  max-width: 510px;
+  object-fit: cover;
+}
+
+.ArtCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 300px;
+  height: stretch;
+}
+
+.ArtCardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.ArtCardTitle {
+  font-family: var(--family-primary);
+  font-size: var(--size-H3-desktop);
+  color: var(--color-primary);
+  width: fit-content;
+  max-width: 280px;
+  background-color: var(--color-accent);
+  padding: 0 10px;
+}
+
+.ArtCardInfo {
+  font-family: var(--family-primary);
+  font-size: var(--size-text-desktop);
+  color: var(--color-secondary);
+  width: 200px;
+}
+
+.ArtCardDescription {
+  font-family: var(--family-primary);
+  font-size: var(--size-text-desktop);
+  color: var(--color-secondary);
+}
