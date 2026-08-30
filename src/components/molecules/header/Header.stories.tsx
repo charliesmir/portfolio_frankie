@@ -22,7 +22,7 @@ export const Primary: Story = {
         onClick: () => {},
         alignment: "center",
         size: "medium",
-        status: "active",
+        isActive: true,
       },
       {
         title: "Artworks",
