@@ -11,7 +11,6 @@ export interface SanityMain {
   };
   cvSection: {
     title: { title: string };
-    buttons: { icon?: string; title?: string };
     info: {
       statement?: string;
       exhibitions?: {
@@ -33,7 +32,7 @@ export interface SanityMain {
   contactsSection: {
     title: { title: string };
     contacts: {
-      contacts?: { icon: string; name: string; link: string }[];
+      contacts: { icon: string; name: string; link: string }[];
     };
   };
 }

@@ -3,7 +3,7 @@ export const mainQuery = `{
     "name": title,
     surname,
     about,
-    "picture": image.asset->url + ?auto=format
+    "picture": image.asset->url + "?auto=format&h=637"
   },
 
   "artworksSection": *[_type == "artworksSection"][0] {
@@ -13,7 +13,7 @@ export const mainQuery = `{
     "gallery": {
       "collections": collections[]-> {
         name,
-        "artwork": artworks[0]->image.asset->url + ?auto=format
+        "artwork": artworks[0]->image.asset->url + "?auto=format"
       }
     }
   },
