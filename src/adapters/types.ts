@@ -7,11 +7,10 @@ export interface SanityMain {
   };
   artworksSection: {
     title: { title: string };
-    gallery: { collections: { artwork: string; name: string }[] };
+    gallery: { collections: { artwork: string; name: string; slug: string }[] };
   };
   cvSection: {
     title: { title: string };
-    buttons: { icon?: string; title?: string };
     info: {
       statement?: string;
       exhibitions?: {
@@ -33,7 +32,7 @@ export interface SanityMain {
   contactsSection: {
     title: { title: string };
     contacts: {
-      contacts?: { icon: string; name: string; link: string }[];
+      contacts: { icon: string; name: string; link: string }[];
     };
   };
 }

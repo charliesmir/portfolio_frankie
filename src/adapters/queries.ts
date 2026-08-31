@@ -3,7 +3,7 @@ export const mainQuery = `{
     "name": title,
     surname,
     about,
-    "picture": image.asset->url + ?auto=format
+    "picture": image.asset->url + "?auto=format&h=637"
   },
 
   "artworksSection": *[_type == "artworksSection"][0] {
@@ -13,7 +13,8 @@ export const mainQuery = `{
     "gallery": {
       "collections": collections[]-> {
         name,
-        "artwork": artworks[0]->image.asset->url + ?auto=format
+        "artwork": artworks[0]->image.asset->url + "?auto=format",
+        "slug": slug.current,
       }
     }
   },
@@ -69,12 +70,12 @@ export const mainQuery = `{
 }`;
 
 export const collectionQuery = `
-  *[_type == "collection" && _id == $id][0] {
+  *[_type == "collection" && slug.current == $slug][0] {
     "title": {
       "title": name,
       "idea": description
     },
-
+    "slug": slug.current,
     "gallery": {
       "artworks": artworks[]-> {
         "image": image.asset->url + "?auto=format",

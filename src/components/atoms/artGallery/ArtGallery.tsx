@@ -3,13 +3,16 @@ import "./ArtGallery.css";
 export type Artwork = {
   image: string;
   title: string;
+
 };
 
 export interface ArtGalleryProps {
   artworks: Artwork[];
+    onClick: (index: number) => void;
+
 }
 
-export const ArtGallery = ({ artworks }: ArtGalleryProps) => {
+export const ArtGallery = ({ artworks, onClick }: ArtGalleryProps) => {
   return (
     <div className="ArtGallery">
       {artworks.map((artwork, index) => (
@@ -18,6 +21,7 @@ export const ArtGallery = ({ artworks }: ArtGalleryProps) => {
             src={artwork.image}
             alt={artwork.title}
             className="ArtGalleryImage"
+            onClick={() => onClick(index)}
           />
         </div>
       ))}
