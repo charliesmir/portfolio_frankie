@@ -7,7 +7,7 @@ export interface SanityMain {
   };
   artworksSection: {
     title: { title: string };
-    gallery: { collections: { artwork: string; name: string }[] };
+    gallery: { collections: { artwork: string; name: string; slug: string }[] };
   };
   cvSection: {
     title: { title: string };

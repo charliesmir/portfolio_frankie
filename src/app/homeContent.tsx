@@ -81,7 +81,7 @@ const preview: CollectionCardProps = {
     hasIcon: true,
     icon: "arrow_forward.svg",
     onClick: () => {
-      // navigation will go here later
+      router.push(`/collections/${activeCollection.slug}`);
     },
   },
 };
@@ -138,13 +138,13 @@ const cvButtons: ButtonProps[] = [
 
 
   return (
-    <div ref={mainRef} className="Home">
+    <div id="main" ref={mainRef} className="Home">
         <div className="HomeTitle"></div>
         <div className="HomeHeader">
         <Header button={navButtons}/>
         </div>
         <TitleSection name={sanityImport.titleSection.name} surname={sanityImport.titleSection.surname} about={sanityImport.titleSection.about} picture={sanityImport.titleSection.picture}/>
-        <div ref={artworksRef} className="HomeArtworks"/>
+        <div id="artworks" ref={artworksRef} className="HomeArtworks"/>
         <div className="HomeArtworksSection">
         <ArtworksSection title={{title: sanityImport.artworksSection.title.title, alignment: "right", color: "Default"}} 
         preview={preview} 
@@ -152,13 +152,13 @@ const cvButtons: ButtonProps[] = [
         }/>
         <div className="HomeArtworksAccent"/>
         </div>
-        <div ref={cvRef} className="HomeCV"></div>
+        <div id="cv" ref={cvRef} className="HomeCV"></div>
         <div className="HomeCVSection">
         <CvSection title={{title: sanityImport.cvSection.title.title, alignment: "left", color: "Default"}} buttons={{sections: cvButtons}} info={{
   ...sanityImport.cvSection.info,
   content: cvContent,
 }}/></div>
-        <div ref={contactsRef} className="HomeContacts"/>
+        <div id="contacts" ref={contactsRef} className="HomeContacts"/>
 <div className="HomeContactsSection">
         <ContactsSection title={{title: sanityImport.contactsSection.title.title, alignment: "right", color: "onPrimary"}} contacts={sanityImport.contactsSection.contacts}/>
            <div className="HomeContactsAccent"/>

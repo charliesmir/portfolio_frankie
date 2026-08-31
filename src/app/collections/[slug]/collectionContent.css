@@ -1,0 +1,17 @@
+.CollectionContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.CollectionContentHeader {
+   position: fixed;
+   top:-30px;
+   align-self: center;
+   z-index: 3;
+}
+
+.CollectionContentMain {
+    margin-bottom: 100px;
+}
