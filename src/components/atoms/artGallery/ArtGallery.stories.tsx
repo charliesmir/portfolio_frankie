@@ -34,5 +34,6 @@ export const Primary: Story = {
         title: "Artwork 1",
       },
     ],
+    onClick: (index: number) => console.log(`Artwork ${index + 1} clicked`),
   },
 };
