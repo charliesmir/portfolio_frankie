@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { SanityCollection } from "@/adapters/types";
 import { CollectionPage } from "@/components/pages/collectionPage/CollectionPage";
@@ -75,6 +75,35 @@ const handleNext = () => {
         },
       ];
 
+const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
+const lastScrollY = useRef(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const difference = currentScrollY - lastScrollY.current;
+
+    if (currentScrollY < 50) {
+      setIsHeaderVisible(true);
+    } else if (difference > 10) {
+      // scrolling down
+      setIsHeaderVisible(false);
+      lastScrollY.current = currentScrollY;
+    } else if (difference < -10) {
+      // scrolling up
+      setIsHeaderVisible(true);
+      lastScrollY.current = currentScrollY;
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleGalleryClick = (index: number) => {
@@ -96,9 +125,13 @@ const handleNext = () => {
 
   return (
     <div className="CollectionContent">
-      <div className="CollectionContentHeader">
-      <Header button={navButtons}/>
-      </div>
+<div
+  className={`CollectionContentHeader ${
+    isHeaderVisible ? "visible" : "hidden"
+  }`}
+>
+  <Header button={navButtons} />
+</div>
       <div className="CollectionContentMain">
       <CollectionPage title={collection.title} highlight={highlight}  gallery={{
   ...collection.gallery,

@@ -7,10 +7,25 @@
 
 }
 .HomeHeader {
-   position: fixed;
-   top:-30px;
-   align-self: center;
-   z-index: 3;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+
+  transition: transform 0.3s ease;
+}
+
+.HomeHeader.visible {
+  transform: translateY(0);
+}
+
+.HomeHeader.hidden {
+  transform: translateY(-120%);
 }
 
 .HomeTitle {    
@@ -93,10 +108,24 @@
     align-items: center;
 }
 .HomeHeader {
-   position: fixed;
-   top:0;
-   align-self: center;
-   z-index: 3;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+
+  transition: transform 0.3s ease;
+}
+
+.HomeHeader.visible {
+  transform: translateY(0);
+}
+
+.HomeHeader.hidden {
+  transform: translateY(-120%);
 }
 
 .HomeTitle {    
@@ -140,7 +169,7 @@
     width: 100%;
 }
 .HomeContactsSection {
-    height: 100vw ; 
+    height: 100vh ; 
     background-color: var(--color-secondary);
     width: 100%;
     position: relative;
@@ -151,7 +180,7 @@
     isolation:isolate;
 }
 .HomeContactsAccent {
-    height: 470px;
+    height: 80vh;
     background-color: var(--color-primary);
     width: calc(100% - 35px);
     position: absolute;

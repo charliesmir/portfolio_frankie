@@ -5,14 +5,13 @@ import { ButtonProps } from "@/components/atoms/button/Button";
 import { TitleSection } from "@/components/sections/titleSection/TitleSection";
 import "./homePage.css";
 import { useRouter } from "next/navigation";
-import { useRef, useState } from "react";
 import { Header } from "@/components/molecules/header/Header";
 import { ArtworksSection } from "@/components/sections/artworksSection/ArtworksSection";
 import { CollectionCardProps } from "@/components/molecules/collectionCard/CollectionCard";
 import { CvSection } from "@/components/sections/cvSection/CvSection";
-import { Contact } from "@/components/atoms/contact/Contact";
 import { ContactsSection } from "@/components/sections/contactsSection/ContactsSection";
 import { Footer } from "@/components/atoms/footer/Footer";
+import { useEffect, useRef, useState } from "react";
 
 interface HomeContentProps {
   sanityImport: SanityMain;
@@ -125,6 +124,37 @@ const cvButtons: ButtonProps[] = [
   },
 ];
 
+const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
+const lastScrollY = useRef(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    // Always show header near the top of the page
+    if (currentScrollY < 50) {
+      setIsHeaderVisible(true);
+    }
+    // Scrolling down
+    else if (currentScrollY > lastScrollY.current) {
+      setIsHeaderVisible(false);
+    }
+    // Scrolling up
+    else {
+      setIsHeaderVisible(true);
+    }
+
+    lastScrollY.current = currentScrollY;
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
     const [loading, setLoading] = useState<boolean>(false);
 
     if (loading) {
@@ -140,9 +170,12 @@ const cvButtons: ButtonProps[] = [
   return (
     <div id="main" ref={mainRef} className="Home">
         <div className="HomeTitle"></div>
-        <div className="HomeHeader">
-        <Header button={navButtons}/>
-        </div>
+    <div
+      className={`HomeHeader ${
+          isHeaderVisible ? "visible" : "hidden"
+           }`}>
+         <Header button={navButtons} />
+    </div>
         <TitleSection name={sanityImport.titleSection.name} surname={sanityImport.titleSection.surname} about={sanityImport.titleSection.about} picture={sanityImport.titleSection.picture}/>
         <div id="artworks" ref={artworksRef} className="HomeArtworks"/>
         <div className="HomeArtworksSection">
