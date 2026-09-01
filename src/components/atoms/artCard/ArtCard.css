@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .ArtCard {
   display: flex;
   flex-direction: row;
@@ -49,4 +50,60 @@
   font-family: var(--family-primary);
   font-size: var(--size-text-desktop);
   color: var(--color-secondary);
+}
+}
+@media only screen and (max-width: 1019px) {
+  .ArtCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ArtCardImage {
+  width: 90%;
+  object-fit: cover;
+}
+
+.ArtCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  width: 90%;
+  height: stretch;
+}
+
+.ArtCardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.ArtCardTitle {
+  font-family: var(--family-primary);
+  font-size: var(--size-H3-mobile);
+  color: var(--color-primary);
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 15px;
+  padding: 0 5px;
+  background-color: var(--color-accent);
+}
+
+.ArtCardInfo {
+  font-family: var(--family-primary);
+  font-size: var(--size-text-mobile);
+  color: var(--color-secondary);
+  width: 100%;
+}
+
+.ArtCardDescription {
+  font-family: var(--family-primary);
+  font-size: var(--size-text-mobile);
+  color: var(--color-secondary);
+}
 }

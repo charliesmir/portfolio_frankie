@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .TitleSection {
   display: flex;
   flex-direction: row;
@@ -38,4 +39,49 @@
   margin-left: -85px; /* Ensures that text follows the outline of the picture */
   width: 593px; /*size of the original picture*/
   height: 637px; /*size of the original picture*/
+}
+}
+
+@media only screen and (max-width: 1019px) {
+.TitleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.TitleSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: calc(90% - 40px);
+}
+
+.TitleSectionFullName {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--family-accent);
+  color: var(--color-accent);
+}
+
+.TitleSectionName {
+  font-size: var(--size-H1-mobile);
+}
+
+.TitleSectionSurname {
+  font-size: var(--size-H2-mobile);
+  margin-top: -40px; /* Adjustment to account for font placement*/
+}
+
+.TitleSectionAbout {
+  font-family: var(--family-primary);
+  font-size: var(--size-H3-mobile);
+  width: 70%;
+  align-self: flex-end;
+}
+
+.TitleSectionPicture {
+  width: 90%;
+  height: auto;
+}
 }

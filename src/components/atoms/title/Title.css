@@ -1,5 +1,5 @@
 @import url("../../styles/designTokens.css");
-
+@media only screen and (min-width: 1020px) {
 .Title {
   font-family: var(--family-accent);
   font-size: var(--size-H2-desktop);
@@ -24,4 +24,30 @@
   width: 545px;
   height: 70px;
   background-color: var(--color-accent);
+}
+}
+@media only screen and (max-width: 1019px) {
+.Title {
+  font-family: var(--family-accent);
+  font-size: var(--size-H2-mobile);
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: lowercase;
+  width: 100%;
+}
+
+.Title.left {
+  justify-content: flex-start;
+}
+
+.Title.onPrimary {
+  color: var(--color-secondary);
+}
+
+.TitleLine {
+ display: none;
+}
 }

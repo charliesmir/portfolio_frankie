@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .Experience {
   display: flex;
   flex-direction: row;
@@ -27,4 +28,37 @@
   font-weight: 400;
   width: 240px;
   margin-top: -5px; /* Adjusts vertical alignment */
+}
+}
+@media only screen and (max-width: 1019px) {
+.Experience {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  text-decoration: none;
+  align-self: center;
+}
+
+.ExperienceYear {
+  font-size: var(--size-text-mobile);
+  width: 100%;
+}
+
+.ExperienceName {
+  font-size: var(--size-text-mobile);
+  width: 100%;
+}
+
+.ExperiencePlace {
+  font-size: var(--size-H3-mobile);
+  font-family: var(--family-accent);
+  color: var(--color-accent);
+  font-weight: 400;
+  width: 100%;
+}
 }

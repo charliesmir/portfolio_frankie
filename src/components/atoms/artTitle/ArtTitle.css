@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .ArtTitle {
   display: flex;
   flex-direction: column;
@@ -14,3 +15,24 @@
   width: 600px;
   color: var(--color-accent);
 }
+}
+
+@media only screen and (max-width: 1019px) {
+.ArtTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--family-primary);
+  font-size: var(--size-H2-mobile);
+  color: var(--color-secondary);
+  width: 100%;
+}
+
+.ArtTitleIdea {
+  font-family: var(--family-accent);
+  font-size: var(--size-H3-mobile);
+  width: 90%;
+  align-self: center;
+  color: var(--color-accent);
+}
+} 
