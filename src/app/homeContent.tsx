@@ -42,7 +42,6 @@ export default function HomeContent({ sanityImport }: HomeContentProps) {
         onClick: () => scrollToSection(mainRef),
         alignment: "center",
         size: "medium",
-        isActive: true,
       },
       {
         title: "Artworks",

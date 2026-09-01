@@ -1,10 +1,10 @@
 @media only screen and (min-width: 1020px) {
 .Header {
-  margin-top: 45px;
   width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px
 }
 
 .HeaderNavigation {
@@ -18,12 +18,13 @@
 }
 @media only screen and (max-width: 1019px) {
 .Header {
-  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  padding: 8px;
+  justify-content: space-between;
 }
 
 .HeaderHomeButton {
@@ -33,7 +34,7 @@
 .HeaderHomeButtonMobile {
   width: 30px;
   height: 30px;
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   border: none;
   cursor: pointer;
 }

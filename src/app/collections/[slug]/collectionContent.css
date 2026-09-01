@@ -8,9 +8,14 @@
 }
 .CollectionContentHeader {
    position: fixed;
-   top:-30px;
+   top:0;
    align-self: center;
    z-index: 3;
+       background-color: var(--color-secondary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
 }
 
 .CollectionContentMain {
@@ -24,6 +29,7 @@
     align-items: center;
     width: 100%;
     margin-top: 100px;
+
   }
 
   .CollectionContentHeader {
@@ -31,6 +37,11 @@
     top: 0;
     align-self: center;
     z-index: 3;
+            background-color: var(--color-secondary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
   }
 
   .CollectionContentMain {
