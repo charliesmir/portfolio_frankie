@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .Footer {
   height: 50px;
   display: flex;
@@ -8,4 +9,18 @@
   color: var(--color-primary);
   font-family: var(--family-primary);
   font-size: var(--size-text-desktop);
+}
+}
+@media only screen and (max-width: 1019px) {
+.Footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  width: calc(100% - 30px);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-family: var(--family-primary);
+  font-size: var(--size-text-mobile);
+}
 }

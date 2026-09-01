@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .Exhibition {
   display: flex;
   flex-direction: row;
@@ -30,4 +31,35 @@
   font-size: var(--size-text-desktop);
   font-weight: 400;
   width: 240px;
+}
+}
+@media only screen and (max-width: 1019px) {
+.Exhibition {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  text-decoration: none;
+}
+
+.ExhibitionYear {
+  font-size: var(--size-H3-mobile);
+  width: 100%;
+}
+
+.ExhibitionName {
+  font-size: var(--size-H3-mobile);
+  font-family: var(--family-accent);
+  width: 100%;
+}
+
+.ExhibitionPlace {
+  font-size: var(--size-text-mobile);
+  font-weight: 400;
+  width: 100%;
+}
 }

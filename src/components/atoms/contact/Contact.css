@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .Contact {
   width: 280px;
   height: 45px;
@@ -15,4 +16,25 @@
 .ContactIcon {
   width: 45px;
   height: 45px;
+}
+}
+@media only screen and (max-width: 1019px) {
+.Contact {
+  width: 90%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-secondary);
+  font-family: var(--family-primary);
+  font-size: var(--size-H3-mobile);
+  text-decoration: none;
+}
+
+.ContactIcon {
+  width: 35px;
+  height: 35px;
+}
 }
