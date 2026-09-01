@@ -20,7 +20,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  width: 90%;
+  width: calc(90% - 40px);
 }
 
 .ArtworksSectionGallery {

@@ -1,6 +1,18 @@
+@media only screen and (min-width: 1020px) {
 .CollectionPage {
   display: flex;
   flex-direction: column;
   gap: 120px;
   align-items: center;
+}
+}
+
+@media only screen and (max-width: 1019px) {
+.CollectionPage {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  width: calc(100% - 40px);
+}
 }

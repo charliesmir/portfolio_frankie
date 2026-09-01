@@ -139,7 +139,6 @@ const cvButtons: ButtonProps[] = [
 
   return (
     <div id="main" ref={mainRef} className="Home">
-        <div className="HomeMobilePlaceholder"> Mobile version is under development, please visit on a larger screen or use desktop view. </div> {/* Mobile placeholder */}
         <div className="HomeTitle"></div>
         <div className="HomeHeader">
         <Header button={navButtons}/>

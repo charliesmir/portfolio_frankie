@@ -113,6 +113,13 @@
   height: 30px;
 }
 
+.Button.small .ButtonContent {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
 .Button.large {
   width: 155px;
   height: 40px;

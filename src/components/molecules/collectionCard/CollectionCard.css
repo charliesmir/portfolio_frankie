@@ -50,7 +50,7 @@
   justify-content: space-between;
   font-family: var(--family-primary);
   font-size: var(--size-H3-mobile);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   width: 100%;
 }
 }
