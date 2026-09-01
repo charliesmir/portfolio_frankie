@@ -8,6 +8,7 @@ export interface HeaderProps {
 export const Header = ({ button }: HeaderProps) => {
   return (
     <div className="Header">
+      <div className="HeaderHomeButton">
       <Button
         title={button[0].title}
         onClick={button[0].onClick}
@@ -15,6 +16,12 @@ export const Header = ({ button }: HeaderProps) => {
         size={button[0].size}
         isActive={button[0].isActive}
       />
+      </div>
+        <button className="HeaderHomeButtonMobile"
+          title={""}
+          onClick={button[0].onClick}
+        >
+        </button>
       <div className="HeaderNavigation">
         <Button
           title={button[1].title}

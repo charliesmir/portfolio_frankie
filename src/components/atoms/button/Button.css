@@ -136,22 +136,6 @@
   align-self: center;
 }
 
-.Button.medium:hover .ButtonContent {
-  width: 85%;
-  align-self: left;
-}
-
-.Button.large:hover .ButtonContent {
-  width: 85%;
-  align-self: left;
-}
-
-.Button.small .ButtonContent {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
-  justify-content: space-between;
-  padding: 0 8px;
-}
 
 .Button.active .ButtonContent {
   background-color: var(--color-accent);
