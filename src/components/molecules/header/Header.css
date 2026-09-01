@@ -11,6 +11,10 @@
   display: flex;
   gap: 40px;
 }
+
+.HeaderHomeButtonMobile{
+  display: none;
+}
 }
 @media only screen and (max-width: 1019px) {
 .Header {
