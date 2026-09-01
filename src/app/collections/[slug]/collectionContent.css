@@ -7,10 +7,25 @@
     margin-top: 100px;
 }
 .CollectionContentHeader {
-   position: fixed;
-   top:-30px;
-   align-self: center;
-   z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+
+  transition: transform 0.3s ease;
+}
+
+.CollectionContentHeader.visible {
+  transform: translateY(0);
+}
+
+.CollectionContentHeader.hidden {
+  transform: translateY(-120%);
 }
 
 .CollectionContentMain {
@@ -26,12 +41,27 @@
     margin-top: 100px;
   }
 
-  .CollectionContentHeader {
-    position: fixed;
-    top: 0;
-    align-self: center;
-    z-index: 3;
-  }
+.CollectionContentHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+
+  transition: transform 0.3s ease;
+}
+
+.CollectionContentHeader.visible {
+  transform: translateY(0);
+}
+
+.CollectionContentHeader.hidden {
+  transform: translateY(-120%);
+}
 
   .CollectionContentMain {
     width: 100%;
