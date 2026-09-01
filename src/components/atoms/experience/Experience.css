@@ -41,6 +41,7 @@
   color: var(--color-secondary);
   font-family: var(--family-primary);
   text-decoration: none;
+  align-self: center;
 }
 
 .ExperienceYear {

@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) {
 .ContactsSection {
   display: flex;
   flex-direction: column;
@@ -8,4 +9,18 @@
 
 .ContactsSectionList {
   margin-right: 100px;
+}
+}
+@media only screen and (max-width: 1019px) {
+.ContactsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  width: 90%;
+}
+
+.ContactsSectionList {
+  margin-right: 5px;
+}
 }
